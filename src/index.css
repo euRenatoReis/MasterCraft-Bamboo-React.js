@@ -10,4 +10,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
+  --fundoMain: hsl(0, 0%, 48%);
+  --titulosEDestaque: hsl(0, 0%, 0%);
+  --corBotoesEetc: hsl(176, 50%, 47%);
+  --selecionadosEActiveStates: hsl(176, 72%, 28%);
+
 }

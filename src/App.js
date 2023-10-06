@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import NormalPage from './components/normal-page/Normal-Page';
+import { ResetStyled } from './components/GlobalStyles/Reset';
+import styled from 'styled-components';
+import {Fonts} from './components/GlobalStyles/Fonts';
+import CompleteState from './components/complete-page-state/completeState';
+import { useState } from 'react';
 
 function App() {
+
+  const [confirmado, setConfirmado] = useState(false);
+  // quando eu terminar de escolher um plano será true
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AplicacaoEstilo className="App">
+      <ResetStyled />
+      <Fonts />
+      <Header />
+      <NormalPage />
+      ${ confirmado ? 
+          <CompleteState/>  
+      : null
+      }
+    </AplicacaoEstilo>
   );
 }
+
+
+const AplicacaoEstilo = styled.div`
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url(./imagens/image-hero-desktop.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: lightgray;
+   text-align: center;
+
+`
+
 
 export default App;
