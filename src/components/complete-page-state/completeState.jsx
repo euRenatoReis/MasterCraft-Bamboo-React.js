@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export const CompleteState = () => {
+const CompleteState = () => {
     return (
 
         <CompleteStateEstilizado>
@@ -29,3 +29,4 @@ const CompleteStateEstilizado = styled.div`
 
 `
 
+export default CompleteState

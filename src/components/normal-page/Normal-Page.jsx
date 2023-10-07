@@ -17,8 +17,8 @@ const NormalPage = () => {
       <TopComponent setbackTheProjectTela={setbackTheProjectTela} />
       <ValuesPart />
       <AboutThisProject />
-      ${backTheProjectTela ? <BackTheProject setConfirmado={setConfirmado}/> : null}
-      ${confirmado ? <CompleteState/> : null }
+      {backTheProjectTela ? <BackTheProject setConfirmado={setConfirmado} setbackTheProjectTela={setbackTheProjectTela}/> : null}
+      {confirmado ? <CompleteState/> : null }
     </MainEstilizado>
   )
 }
