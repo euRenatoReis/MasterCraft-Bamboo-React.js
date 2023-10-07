@@ -2,9 +2,12 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { fundoMain, corBotoesEetc } from '../GlobalStyles/Colors';
+import { fundoMain, corBotoesEetc, selecionadosEActiveStates } from '../GlobalStyles/Colors';
 
 const AboutThisProject = () => {
+
+    
+     
     return (
         <AboutProjectAreaEstilo>
             <h3>About this project</h3>
@@ -99,6 +102,10 @@ const AboutProjectAreaEstilo = styled.div`
         border: none;
      }
 
+     .select-reward:hover{
+        background-color: ${selecionadosEActiveStates};
+     }
+        
      .count-left{
          gap: 10px;
          align-items: center;

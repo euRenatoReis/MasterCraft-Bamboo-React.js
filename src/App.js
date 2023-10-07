@@ -3,13 +3,10 @@ import NormalPage from './components/normal-page/Normal-Page';
 import { ResetStyled } from './components/GlobalStyles/Reset';
 import styled from 'styled-components';
 import {Fonts} from './components/GlobalStyles/Fonts';
-import CompleteState from './components/complete-page-state/completeState';
-import { useState } from 'react';
 
 function App() {
 
-  const [confirmado, setConfirmado] = useState(false);
-  // quando eu terminar de escolher um plano será true
+
 
   return (
     <AplicacaoEstilo className="App">
@@ -17,10 +14,6 @@ function App() {
       <Fonts />
       <Header />
       <NormalPage />
-      ${ confirmado ? 
-          <CompleteState/>  
-      : null
-      }
     </AplicacaoEstilo>
   );
 }

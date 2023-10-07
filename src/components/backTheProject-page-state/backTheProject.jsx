@@ -1,15 +1,23 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 
-const backTheProject = () => {
+const BackTheProject = () => {
+
+    const [cardSelecionado, setCardSelecionado] = useState(false)
+
+    function SelecionarCard() {
+
+        setCardSelecionado(true)
+    }
+
     return (
         <div>
-            <div> <h3>Back this project</h3> 
-            <input className='close-page'></input> </div>
+            <div> <h3>Back this project</h3>
+                <input className='close-page'></input> </div>
             <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
             <div>
-                <label className='option-1'>
+                <label className='option-1' onClick={SelecionarCard}>
                     <div>
                         <input type='radio'></input>
                     </div>
@@ -21,7 +29,7 @@ const backTheProject = () => {
                         </p>
                     </div>
                 </label>
-                <label className='option-2'>
+                <label className='option-2' onClick={SelecionarCard}>
                     <div>
                         <input type='radio'></input>
                     </div>
@@ -37,18 +45,18 @@ const backTheProject = () => {
                             and you’ll be added to a special Backer member list.
                         </p>
                     </div>
-                    ${cardSelecionado === index ?
+                    ${cardSelecionado ?
                         <div className='plano-confirm'>
                             <p>Enter your pledge</p>
                             <div>
                                 <input>$<b>25</b></input>
                                 <input>Continue</input>
                             </div>
-                        </div> : null   
+                        </div> : null
                     }
 
                 </label>
-                <label className='option-3'>
+                <label className='option-3' onClick={SelecionarCard}>
                     <div>
                         <input type='radio'></input>
                     </div>
@@ -63,7 +71,7 @@ const backTheProject = () => {
                             You’ll be added to our Backer member list. Shipping is included.
                         </p>
                     </div>
-                    ${cardSelecionado === index ?
+                    ${cardSelecionado ?
                         <div className='plano-confirm'>
                             <p>Enter your pledge</p>
                             <div>
@@ -73,7 +81,7 @@ const backTheProject = () => {
                         </div> : null
                     }
                 </label>
-                <label className='option-4'>
+                <label className='option-4' onClick={SelecionarCard}>
                     <div>
                         <input type='radio'></input>
                     </div>
@@ -88,7 +96,7 @@ const backTheProject = () => {
                             You’ll be added to our Backer member list. Shipping is included.
                         </p>
                     </div>
-                    ${cardSelecionado == index ?
+                    ${cardSelecionado ?
                         <div className='plano-confirm'>
                             <p>Enter your pledge</p>
                             <div>
@@ -102,4 +110,4 @@ const backTheProject = () => {
     )
 }
 
-export default backTheProject
+export default BackTheProject

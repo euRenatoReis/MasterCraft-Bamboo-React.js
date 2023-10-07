@@ -3,7 +3,10 @@ import React from 'react'
 import styled from 'styled-components';
 import { corBotoesEetc,fundoMain } from '../GlobalStyles/Colors';
 
-const TopComponent = () => {
+const TopComponent = (props) => {
+
+  const {setbackTheProjectTela} = props
+
   return (
 
     <TopComponentEstilo>
@@ -13,7 +16,7 @@ const TopComponent = () => {
             <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         </div>
         <div className='botoes'>
-            <button className='back-project-button'>Back this project</button>
+            <button className='back-project-button' onClick={setbackTheProjectTela(true)}>Back this project</button>
             <button className='bookmark'>Bookmark</button>
         </div>
     </TopComponentEstilo>

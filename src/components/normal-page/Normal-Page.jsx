@@ -1,16 +1,24 @@
+
 import TopComponent from './TopComponent';
 import ValuesPart from './Values';
 import AboutThisProject from './aboutThisProject';
 import styled from 'styled-components';
-
-import React from 'react'
+import BackTheProject from '../backTheProject-page-state/backTheProject';
+import React, { useState } from 'react';
+import CompleteState from '../complete-page-state/completeState';
 
 const NormalPage = () => {
+
+  const [confirmado, setConfirmado] = useState(false);
+  const [backTheProjectTela, setbackTheProjectTela] = useState(false);
+
   return (
     <MainEstilizado>
-        <TopComponent/>
-        <ValuesPart/>
-        <AboutThisProject/>
+      <TopComponent setbackTheProjectTela={setbackTheProjectTela} />
+      <ValuesPart />
+      <AboutThisProject />
+      ${backTheProjectTela ? <BackTheProject setConfirmado={setConfirmado}/> : null}
+      ${confirmado ? <CompleteState/> : null }
     </MainEstilizado>
   )
 }
