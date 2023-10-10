@@ -4,10 +4,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { fundoMain, corBotoesEetc, selecionadosEActiveStates } from '../GlobalStyles/Colors';
 
-const AboutThisProject = () => {
+const AboutThisProject = (props) => {
 
-    
-     
+    const { setbackTheProjectTela } = props;
+
+    function fecharTela() {
+        setbackTheProjectTela(true)
+    }
+
     return (
         <AboutProjectAreaEstilo>
             <h3>About this project</h3>
@@ -31,7 +35,15 @@ const AboutThisProject = () => {
                         You've helped us launch our promotional campaign,
                         and you’ll be added to a special Backer member list.
                     </p>
-                    <div><div className='count-left'><h1 >101</h1><p>left</p></div> <button className='select-reward'>Select Reward</button></div>
+                    <div>
+                        <div className='count-left'>
+                            <h1 >101</h1>
+                            <p>left</p>
+                        </div>
+                        <button className='select-reward' onClick={() => fecharTela()}>
+                            Select Reward
+                        </button>
+                    </div>
                 </div>
                 <div className='plano'>
                     <div><h3>Black Edition Stand </h3> <p className='pladge'>Pledge $75 or more</p></div>
@@ -40,7 +52,15 @@ const AboutThisProject = () => {
                         You’ll be added to our Backer member list.
                         Shipping is included.
                     </p>
-                    <div><div className='count-left'><h1 >64</h1><p>left</p></div> <button className='select-reward'>Select Reward</button></div>
+                    <div>
+                        <div className='count-left'>
+                            <h1 >64</h1>
+                            <p>left</p>
+                        </div>
+                        <button className='select-reward' onClick={() => fecharTela()}>
+                            Select Reward
+                        </button>
+                    </div>
                 </div>
                 <div className='plano encerrado'>
                     <div><h3>Mahogany Special Edition</h3> <p className='pladge'>Pledge $200 or more</p></div>
@@ -49,7 +69,15 @@ const AboutThisProject = () => {
                         and a personal thank you. You’ll be added to our Backer member list.
                         Shipping is included
                     </p>
-                    <div><div className='count-left'><h1>0</h1><p>left</p></div> <button className='select-reward'>Out of Stock</button></div>
+                    <div>
+                        <div className='count-left'>
+                            <h1>0</h1>
+                            <p>left</p>
+                        </div>
+                        <button className='select-reward' onClick={() => fecharTela()}>
+                            Out of Stock
+                        </button>
+                    </div>
                 </div>
             </div>
         </AboutProjectAreaEstilo>

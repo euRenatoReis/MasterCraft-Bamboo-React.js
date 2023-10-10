@@ -4,8 +4,8 @@ import { ResetStyled } from './components/GlobalStyles/Reset';
 import styled from 'styled-components';
 import {Fonts} from './components/GlobalStyles/Fonts';
 
-function App() {
 
+function App() {
 
 
   return (
@@ -30,6 +30,7 @@ const AplicacaoEstilo = styled.div`
    background-size: contain;
    background-color: lightgray;
    text-align: center;
+   overflow-x: hidden;
 
 `
 
