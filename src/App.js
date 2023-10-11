@@ -27,11 +27,10 @@ const AplicacaoEstilo = styled.div`
    align-items: center;
    background-image: url(./imagens/image-hero-desktop.jpg);
    background-repeat: no-repeat;
-   background-size: contain;
    background-color: lightgray;
    text-align: center;
    overflow-x: hidden;
-
+  
 `
 
 

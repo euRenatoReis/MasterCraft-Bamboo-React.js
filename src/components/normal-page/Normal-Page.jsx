@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import BackTheProject from '../backTheProject-page-state/backTheProject';
 import React, { useState } from 'react';
 import CompleteState from '../complete-page-state/completeState';
-/* import { useTela } from '../context/contextOpen'; */
+
 
 const NormalPage = () => {
 
@@ -20,7 +20,7 @@ const NormalPage = () => {
       <ValuesPart />
       <AboutThisProject setbackTheProjectTela={setbackTheProjectTela}/>
       {backTheProjectTela ? <BackTheProject setConfirmado={setConfirmado} setbackTheProjectTela={setbackTheProjectTela}/> : null}
-      {confirmado ? <CompleteState/> : null }
+      {confirmado ? <CompleteState setConfirmado={setConfirmado}/> : null }
     </MainEstilizado>
   )
 }
@@ -32,6 +32,7 @@ const MainEstilizado = styled.main`
    justify-content: center;
    width: 50%;
    gap: 20px;
+   background-image: url(./imagens/image-hero-desktop.jpg);
 
 `
 

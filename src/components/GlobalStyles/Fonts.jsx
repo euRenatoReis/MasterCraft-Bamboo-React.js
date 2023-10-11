@@ -5,13 +5,13 @@ import { fundoMain } from "./Colors";
 const FontSize = "16px";
 
 
-export const Fonts = createGlobalStyle`
+const Fonts = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
 *{
     font-family: 'Commissioner', sans-serif;]
-    font-size: ${FontSize}
+    font-size: ${FontSize};
 }
 
 p{
@@ -20,3 +20,4 @@ p{
 
 `
 
+export {Fonts}

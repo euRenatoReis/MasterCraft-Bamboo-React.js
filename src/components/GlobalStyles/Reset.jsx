@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 
-export const ResetStyled = createGlobalStyle`
+const ResetStyled = createGlobalStyle`
 
   body{ 
    border: 0px;
@@ -10,3 +10,5 @@ export const ResetStyled = createGlobalStyle`
    gap: 0px;
    box-sizing: border-box;}
 `
+
+export {ResetStyled}

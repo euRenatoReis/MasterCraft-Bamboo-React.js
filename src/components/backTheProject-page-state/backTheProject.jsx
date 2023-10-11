@@ -6,19 +6,19 @@ import { fundoMain, selecionadosEActiveStates } from '../GlobalStyles/Colors';
 const BackTheProject = (props) => {
 
     const [cardSelecionado, setCardSelecionado] = useState(1);
-    const { setConfirmado, setbackTheProjectTela } = props
+    const { setConfirmado, setbackTheProjectTela } = props;
 
     function fecharTela() {
-        setbackTheProjectTela(false)
+        setbackTheProjectTela(false);
     }
 
     function SelecionarCard(option) {
-        setCardSelecionado(option)
+        setCardSelecionado(option);
     }
 
     function funcaoDoado() {
-        setbackTheProjectTela(false)
-        setConfirmado(true)
+        setConfirmado(true);
+        setbackTheProjectTela(false);
     }
 
     return (
@@ -259,8 +259,8 @@ const BackTheProjectTelaEstilo = styled.div`
     .input-radio{
 
         display: flex;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         margin-top: 50px;
         margin-left: 20px;
         border-color: ${selecionadosEActiveStates};
