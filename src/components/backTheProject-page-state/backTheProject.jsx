@@ -25,7 +25,9 @@ const BackTheProject = (props) => {
         <BackTheProjectTelaEstilo>
             <section>
                 <div className='top-BackProjectPage'> <h3>Back this project</h3>
-                    <input className='close-page' type='button' onClick={() => fecharTela()}></input>
+                    <button className='close-page' type='button' onClick={() => fecharTela()}>
+                        <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4" /></svg>
+                    </button>
                 </div>
                 <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
@@ -63,7 +65,7 @@ const BackTheProject = (props) => {
                             <div className='plano-confirm'>
                                 <p>Enter your pledge</p>
                                 <div>
-                                    <input className='value-edit' placeholder='$' value={"25"} type='text'></input>
+                                    <input className='value-edit' placeholder='$25' type='number'></input>
                                     <input className='botao-confirm' onClick={() => funcaoDoado()} value={"Confirmar"} type='button'></input>
                                 </div>
                             </div> : null
@@ -90,7 +92,7 @@ const BackTheProject = (props) => {
                             <div className='plano-confirm'>
                                 <p>Enter your pledge</p>
                                 <div>
-                                    <input className='value-edit' placeholder='$' value={"75"}></input>
+                                    <input className='value-edit' placeholder='$75' type='number'></input>
                                     <input className='botao-confirm' onClick={() => funcaoDoado()} value={"Confirmar"} type='button'></input>
                                 </div>
                             </div> : null
@@ -99,11 +101,12 @@ const BackTheProject = (props) => {
                     <label className='option-4' htmlFor='option4' onClick={() => SelecionarCard(4)}>
                         <div className='option-information-div'>
                             <input className='input-radio' type='radio' id='option4' name='optionDonat' ></input>
+                            
                             <div>
                                 <div className='cabecalho-title'>
                                     <p className='title-option'>Mahogany Special Edition</p>
                                     <p>Pledge $200 or more</p>
-                                    <p className='restante'>0 left</p>
+                                    <p className='restante'>2 left</p>
                                 </div>
                                 <p className='text-selecionado-option'>
                                     You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you.
@@ -115,7 +118,7 @@ const BackTheProject = (props) => {
                             <div className='plano-confirm'>
                                 <p>Enter your pledge</p>
                                 <div>
-                                    <input className='value-edit' placeholder='$' value={"200"}></input>
+                                    <input className='value-edit' placeholder='$200' type='number'></input>
                                     <input className='botao-confirm' onClick={() => funcaoDoado()} value={"Confirmar"} type='button'></input>
                                 </div>
                             </div> : null}
@@ -135,21 +138,23 @@ const BackTheProjectTelaEstilo = styled.div`
     justify-self: center;
     justify-content: center;
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.432);
     top: 0px;
     padding-top: 10px;
     overflow-x: hidden;
+    padding-bottom: 50px;
  
     section{ 
         background-color: white;
-        width: 600px;
-        height: 750px;
+        width: 650px;
         display: flex;
         flex-direction: column;
         padding: 20px;
         border-radius: 10px;
         overflow-x: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .top-BackProjectPage{
@@ -161,11 +166,14 @@ const BackTheProjectTelaEstilo = styled.div`
 
     .close-page{
         background: none;
-        background-image: url(../imagens/icon-close);
         display: flex;
         width: 40px; 
         height: 40px;
-
+        justify-content: center;
+        align-items: center;
+        border: none;
+        position: relative;
+      
     }
 
     .options-cards{
@@ -211,6 +219,8 @@ const BackTheProjectTelaEstilo = styled.div`
         width: 100px;
         height: 30px;
         border-radius: 45px;
+        padding: 5px;
+        margin-right: 10px;
     }
 
     .value-edit{
@@ -219,7 +229,7 @@ const BackTheProjectTelaEstilo = styled.div`
         font-weight: bold;
         color: black;
         background-color: none;
-        
+        padding-left: 20px;
     }
 
     .botao-confirm{

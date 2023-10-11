@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { fundoMain, corBotoesEetc } from '../GlobalStyles/Colors'
+import { corBotoesEetc } from '../GlobalStyles/Colors'
 
 const ValuesPart = () => {
     return (

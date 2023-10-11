@@ -32,8 +32,8 @@ const MainEstilizado = styled.main`
    justify-content: center;
    width: 50%;
    gap: 20px;
-   background-image: url(./imagens/image-hero-desktop.jpg);
-
+   background-image: url(../public/imagens/image-hero-desktop.jpg);
+  
 `
 
 

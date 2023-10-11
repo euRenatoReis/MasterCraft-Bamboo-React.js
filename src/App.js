@@ -25,7 +25,7 @@ const AplicacaoEstilo = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-image: url(./imagens/image-hero-desktop.jpg);
+   background-image: url(../public/imagens/image-hero-desktop.jpg);
    background-repeat: no-repeat;
    background-color: lightgray;
    text-align: center;
