@@ -152,6 +152,12 @@ const AboutProjectAreaEstilo = styled.div`
      .encerrado .pladge{
         color: ${fundoMain};
      }
+
+     @media (max-width: 375px){
+
+        
+     }
+
 `
 
 export default AboutThisProject

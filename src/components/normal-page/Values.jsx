@@ -68,6 +68,22 @@ const ValoresEstilizado = styled.div`
         border-radius: 15px;
     }
 
+    @media (max-width: 375px){
+
+
+        .valores{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .termometro{
+            width: 80%;  
+        }
+
+
+    }
+
 `
 
 

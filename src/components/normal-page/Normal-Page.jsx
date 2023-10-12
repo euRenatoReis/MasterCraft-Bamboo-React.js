@@ -15,7 +15,7 @@ const NormalPage = () => {
  
 
   return (
-    <MainEstilizado>
+    <MainEstilizado className='main-page'>
       <TopComponent setbackTheProjectTela={setbackTheProjectTela}/>
       <ValuesPart />
       <AboutThisProject setbackTheProjectTela={setbackTheProjectTela}/>
@@ -32,8 +32,20 @@ const MainEstilizado = styled.main`
    justify-content: center;
    width: 50%;
    gap: 20px;
-   background-image: url(../public/imagens/image-hero-desktop.jpg);
   
+   @media (max-width: 375px){
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+
+   }
+   
 `
 
 

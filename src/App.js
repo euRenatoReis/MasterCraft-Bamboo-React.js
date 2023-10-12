@@ -4,7 +4,6 @@ import { ResetStyled } from './components/GlobalStyles/Reset';
 import styled from 'styled-components';
 import {Fonts} from './components/GlobalStyles/Fonts';
 
-
 function App() {
 
 
@@ -30,7 +29,21 @@ const AplicacaoEstilo = styled.div`
    background-color: lightgray;
    text-align: center;
    overflow-x: hidden;
-  
+
+   @media (max-width: 375px){
+
+       body{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight: 400; 
+        background-image: url(../public/imagens/image-hero-mobile.jpg);
+        background-color: lightgray;
+        max-width: 375px;
+       }
+   }
+
 `
 
 
