@@ -33,18 +33,10 @@ const MainEstilizado = styled.main`
    width: 50%;
    gap: 20px;
   
-   @media (max-width: 375px){
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    padding-right: 20px;
-    padding-left: 20px;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 375px){
 
-   }
+    width: 95%;
+  }
    
 `
 

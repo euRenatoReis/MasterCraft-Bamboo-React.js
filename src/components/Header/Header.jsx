@@ -58,16 +58,15 @@ const HeaderEstilizado = styled.header`
         }
 
         .menu-hamb{
-
-           display: flex;
-           width: 40px;
-           height: 40px;
-           justify-content: center;
-           align-items: center;
-           background: none;
-           border: none;
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            border: 0px;
         }
      }
+
 `
 
 

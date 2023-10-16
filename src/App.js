@@ -41,7 +41,17 @@ const AplicacaoEstilo = styled.div`
         background-image: url(../public/imagens/image-hero-mobile.jpg);
         background-color: lightgray;
         max-width: 375px;
+        overflow-x: hidden;
        }
+
+       ${NormalPage}{
+
+           display: flex;
+           max-width: 375px;
+           padding: 10px;
+           overflow-x: hidden;
+       }
+
    }
 
 `

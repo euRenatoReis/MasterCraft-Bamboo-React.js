@@ -70,15 +70,26 @@ const ValoresEstilizado = styled.div`
 
     @media (max-width: 375px){
 
-
         .valores{
+
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            max-width: 90%;
+        }
+
+        .valores div{
+            display: flex;
+            width: 100px;
+            gap: 0px;
+            border-bottom: solid 1px black;
         }
 
         .termometro{
-            width: 80%;  
+
+            display: flex;
+            max-width: 70%;
         }
 
 

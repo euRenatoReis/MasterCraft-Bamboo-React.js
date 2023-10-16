@@ -100,8 +100,7 @@ const BackTheProject = (props) => {
                     </label>
                     <label className='option-4' htmlFor='option4' onClick={() => SelecionarCard(4)}>
                         <div className='option-information-div'>
-                            <input className='input-radio' type='radio' id='option4' name='optionDonat' ></input>
-                            
+                            <input className='input-radio' type='radio' id='option4' name='optionDonat' ></input>      
                             <div>
                                 <div className='cabecalho-title'>
                                     <p className='title-option'>Mahogany Special Edition</p>
@@ -285,6 +284,36 @@ const BackTheProjectTelaEstilo = styled.div`
         flex-direction: row;
         justify-content: space-between;
         gap: 10px;
+    }
+
+    @media (max-width: 375px){
+ 
+        height: 100vh;
+        position: absolute;
+
+        section{
+
+            display: flex;
+            max-width: 95%;
+            height: 1200px;
+            overflow-y: hidden;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 240px;
+            text-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        
+        }
+
+        label div{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 

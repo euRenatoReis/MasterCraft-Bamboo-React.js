@@ -26,7 +26,7 @@ const TopComponent = (props) => {
       <div className='botoes'>
         <button className='back-project-button' onClick={() => abreTelaDoacao()}>Back this project</button>
 
-        {marca === true ? <label htmlFor='bookmark-id' className='bookmark' onClick={() => setMarca(marca ? marca === false : marca === true)}>
+        {!marca ? <label htmlFor='bookmark-id' className='bookmark' onClick={() => setMarca(!marca)}>
           <input id='bookmark-id' type='checkbox' hidden></input>
           <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd"><circle fill="#2F2F2F" cx="28" cy="28" r="28" />
@@ -34,7 +34,7 @@ const TopComponent = (props) => {
           </svg>
           <p>Bookmark</p>
         </label> :
-          <label htmlFor='bookmarked-id' className='bookmark-marked' onClick={() => setMarca(!marca ? marca === true : marca === false)}>
+          <label htmlFor='bookmarked-id' className='bookmark-marked'  onClick={() => setMarca(marca)}>
             <input id='bookmarked-id' type='checkbox' hidden></input>
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd"><circle fill={corBotoesEetc} cx="28" cy="28" r="28" />
@@ -146,17 +146,11 @@ const TopComponentEstilo = styled.div`
       color: ${selecionadosEActiveStates};
     }
 
-
     @media (max-width: 375px){
 
-
-       .esfera{
-         position: relative;
-         align-self: center;
-         justify-self: center;
-       }
-
+       position: relative;
     }
+
 `
 
 

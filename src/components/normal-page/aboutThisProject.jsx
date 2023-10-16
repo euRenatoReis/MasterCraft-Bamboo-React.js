@@ -153,10 +153,6 @@ const AboutProjectAreaEstilo = styled.div`
         color: ${fundoMain};
      }
 
-     @media (max-width: 375px){
-
-        
-     }
 
 `
 
