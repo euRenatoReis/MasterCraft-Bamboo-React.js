@@ -288,7 +288,7 @@ const BackTheProjectTelaEstilo = styled.div`
 
     @media (max-width: 375px){
  
-        height: 100vh;
+        min-height: 659px;
         position: absolute;
 
         section{
@@ -303,9 +303,7 @@ const BackTheProjectTelaEstilo = styled.div`
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 240px;
             text-wrap: wrap;
-            text-align: center;
             justify-content: center;
         
         }
@@ -313,7 +311,10 @@ const BackTheProjectTelaEstilo = styled.div`
         label div{
             display: flex;
             flex-direction: column;
+            padding: 20px;
         }
+
+
     }
 
 

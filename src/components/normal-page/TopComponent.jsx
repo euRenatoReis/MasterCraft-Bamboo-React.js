@@ -149,6 +149,15 @@ const TopComponentEstilo = styled.div`
     @media (max-width: 375px){
 
        position: relative;
+
+
+       .apresentacao{
+
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+       }
     }
 
 `
